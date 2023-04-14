@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PhoneVerification</string>
+    <string name="wesendyou">We will send you an one time password on this mobile number</string>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical"
+    tools:context=".SendOtp">
+
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+        <TextView
+            android:text="OTP Verification"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textAlignment="center"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:text="@string/wesendyou"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:textAlignment="center"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Enter your mobile number"
+            android:layout_marginLeft="50dp"
+            android:textAlignment="center"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="+88-"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/mobileNumberId"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:textSize="14sp"
+            android:hint="01XXXXXXXXX"
+            android:layout_height="40dp">
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+
+    </View>
+
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/getOTPId"
+            android:text="Get OTP"
+            android:layout_margin="30dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <ProgressBar
+            android:id="@+id/progressOTPId"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+        </ProgressBar>
+    </FrameLayout>
+
+</LinearLayout>

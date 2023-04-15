@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GSAP Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        #circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <script>
+        gsap.to("#circle", { x: 300, duration: 10 });
+    </script>
+</body>
+</html>
